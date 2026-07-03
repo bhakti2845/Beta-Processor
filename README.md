@@ -1,4 +1,4 @@
-# Pipelined Beta Processor with Hazard Detection
+# Pipelined Beta Processor With Hazard Detection
 
 A 32-bit **Beta-style pipelined processor** implemented in Verilog HDL.  
 This project builds a processor datapath and control unit from scratch and extends the basic 5-stage pipeline with **forwarding**, **load-use hazard detection**, **stall logic**, **NOP insertion**, and **control-hazard annul logic**.
