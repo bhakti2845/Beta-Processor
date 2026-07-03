@@ -26,8 +26,9 @@ The design was developed, simulated, and synthesized using **Xilinx Vivado**.
 - [Simulation and Verification](#simulation-and-verification)
 - [How to Run in Vivado](#how-to-run-in-vivado)
 - [Current Limitations](#current-limitations)
-- [Future Scope](#future-scope)
+- [Future Scope](#future-work)
 - [Project Status](#project-status)
+- [References](#references)
 
 ---
 
