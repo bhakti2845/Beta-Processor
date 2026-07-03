@@ -1,0 +1,373 @@
+
+*** Running vivado
+    with args -log Top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Mon Jun 29 19:09:12 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Top.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 367.344 ; gain = 65.473
+Command: read_checkpoint -auto_incremental -incremental {D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/utils_1/imports/synth_1/Register_file.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/utils_1/imports/synth_1/Register_file.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Top -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25960
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 847.688 ; gain = 470.902
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top' [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Datapath_unit' [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Datapath_unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Hazard_unit' [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Hazard_unit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Hazard_unit' (0#1) [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Hazard_unit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Forward_unit' [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Forward_unit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Forward_unit' (0#1) [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Forward_unit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PCSEL_mux' [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/PCSEL_mux.v:23]
+INFO: [Synth 8-226] default block is never used [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/PCSEL_mux.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'PCSEL_mux' (0#1) [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/PCSEL_mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Register_en' [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Register_en.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Register_en' (0#1) [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Register_en.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PC_4' [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/PC_4.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC_4' (0#1) [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/PC_4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_Memory' [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Instruction_Memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_Memory' (0#1) [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Instruction_Memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Register_file' [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Register_file.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Register_file' (0#1) [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Register_file.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux_2to1_5bits' [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Mux_2to1_5bits.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_2to1_5bits' (0#1) [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Mux_2to1_5bits.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Sign_Extender' [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Sign_Extender.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Sign_Extender' (0#1) [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Sign_Extender.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LS_2' [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/LS_2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LS_2' (0#1) [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/LS_2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Adder' [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Adder' (0#1) [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Nor_gate' [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Nor_gate.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Nor_gate' (0#1) [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Nor_gate.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux_2to1' [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Mux_2to1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_2to1' (0#1) [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Mux_2to1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Register' [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Register.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Register' (0#1) [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Register.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Data_memory' [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Data_memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Data_memory' (0#1) [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Data_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Register_1' [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Register_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Register_1' (0#1) [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Register_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Register_2' [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Register_2.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Register_2' (0#1) [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Register_2.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Register_4' [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Register_4.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Register_4' (0#1) [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Register_4.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Datapath_unit' (0#1) [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Datapath_unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Control_unit' [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Control_unit.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Control_unit' (0#1) [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Control_unit.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (0#1) [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Top.v:23]
+WARNING: [Synth 8-3848] Net IM in module/entity Instruction_Memory does not have driver. [D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/sources_1/new/Instruction_Memory.v:28]
+WARNING: [Synth 8-7129] Port Addr[31] in module Data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[30] in module Data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[29] in module Data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[28] in module Data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[27] in module Data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[26] in module Data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[25] in module Data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[24] in module Data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[23] in module Data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[22] in module Data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[21] in module Data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[20] in module Data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[19] in module Data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[18] in module Data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[17] in module Data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[16] in module Data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[15] in module Data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[14] in module Data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[13] in module Data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[12] in module Data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[11] in module Data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[10] in module Data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[31] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[30] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[29] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[28] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[27] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[26] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[25] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[24] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[23] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[22] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[21] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[20] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[19] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[18] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[17] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[16] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[15] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[14] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[13] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[12] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[11] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[10] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[9] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[8] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[7] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[6] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[5] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[4] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[3] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[2] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[1] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Out[0] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[31] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[30] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[29] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[28] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[27] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[26] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[25] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[24] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[23] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[22] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[21] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[20] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[19] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[18] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[17] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[16] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[15] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[14] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[13] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[12] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[11] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[10] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[9] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[8] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[7] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[6] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[5] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[4] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[3] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[2] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[1] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr[0] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IF_ID_IR[10] in module Forward_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IF_ID_IR[9] in module Forward_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IF_ID_IR[8] in module Forward_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IF_ID_IR[7] in module Forward_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IF_ID_IR[6] in module Forward_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IF_ID_IR[5] in module Forward_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IF_ID_IR[4] in module Forward_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IF_ID_IR[3] in module Forward_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IF_ID_IR[2] in module Forward_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IF_ID_IR[1] in module Forward_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IF_ID_IR[0] in module Forward_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ID_EX_IR[31] in module Forward_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ID_EX_IR[30] in module Forward_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ID_EX_IR[29] in module Forward_unit is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 957.316 ; gain = 580.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 957.316 ; gain = 580.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 957.316 ; gain = 580.531
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint D:/Beta/Beta_Processor - Copy/Beta_Processor.srcs/utils_1/imports/synth_1/Register_file.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 957.316 ; gain = 580.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 957.316 ; gain = 580.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 957.316 ; gain = 580.531
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 15    
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---RAMs : 
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   4 Input   32 Bit        Muxes := 4     
+	   2 Input   32 Bit        Muxes := 11    
+	   2 Input    5 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 6     
+	  10 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   7 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 3     
+	  10 Input    1 Bit        Muxes := 4     
+	   4 Input    1 Bit        Muxes := 1     
+	  13 Input    1 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1103.715 ; gain = 726.930
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1119.465 ; gain = 742.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1119.465 ; gain = 742.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1318.773 ; gain = 941.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1318.773 ; gain = 941.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1318.773 ; gain = 941.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1318.773 ; gain = 941.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1318.773 ; gain = 941.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1318.773 ; gain = 941.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |OBUF |    21|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    21|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1318.773 ; gain = 941.988
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 444 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1318.773 ; gain = 941.988
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1318.773 ; gain = 941.988
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1333.809 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1443.891 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: b124a6b1
+INFO: [Common 17-83] Releasing license: Synthesis
+59 Infos, 102 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 1443.891 ; gain = 1073.531
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1443.891 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Beta/Beta_Processor - Copy/Beta_Processor.runs/synth_1/Top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 29 19:10:08 2026...
